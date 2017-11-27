@@ -1,0 +1,141 @@
+.navMenu{
+    color: #000000;
+    background-image: url("Imagens/madeira.jpg");
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    height: 100px;
+    min-width: 950px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:  #dcbd96;
+    padding: 10px;
+}
+.ulMenu{
+    border-width:0px;
+}
+.nav > .liMenu{
+    border-width:0px;
+    width: 350px;
+}
+.imgMenu{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}.ulLogo{
+    list-style-type: none;
+    position: absolute;
+    width: 300px;
+    margin-top: 35px;
+    margin-left: 85px;
+    color: #dcbd96
+}
+.liLogo{
+    width: 350px;
+    float: left;
+    font-family: Sweet;
+    font-size: 40px;
+}
+.liMenuWpp{
+    position: absolute;
+}
+.liMenuGmail{
+    margin-top: 32px;
+}
+.pMenu{
+    float: right;
+}
+.pMenuWpp{
+    margin-right: 10px;
+}
+@font-face{
+    font-family: Sweet;
+    src: url("Sweet.ttf");
+}
+#logo{
+    width: 152px;
+    height: 108px;
+    float: left;
+    margin-left: -18px;
+    margin-top: -21px;
+}
+
+
+.divTopico{
+    min-width: 950px;
+}
+.topicos{
+    min-width: 670px;
+    border: 0px;
+}
+.pTopico{
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 20px;
+}
+.liTopico{
+    border: 0px;
+    cursor: pointer;
+}
+#ulServicos{
+    list-style-type: none;
+    display: none;
+}
+#ulServiços:hover{
+display: list-item;
+}
+.servicos{
+    border-right: 1px;
+    border-right-style: solid;
+    border-color: lightgrey;
+}
+.servicos:hover{
+    border-right: 4px;
+    border-right-style: solid;
+    border-color: black;;
+    border-left: 4px;
+    border-left-style: solid;
+}
+.servicos:hover + #ulServicos{
+    display: list-item;
+}
+
+
+.produtos{
+    border-right: 1px;
+    border-right-style: solid;
+    border-color: lightgrey;
+}
+.produtos:hover{
+    border-right: 4px;
+    border-right-style: solid;
+    border-color: black;;
+    border-left: 4px;
+    border-left-style: solid;
+}
+.projetos:hover{
+    border-right: 4px;
+    border-right-style: solid;
+    border-color: black;;
+    border-left: 4px;
+    border-left-style: solid;
+}
+
+#inBuscar{
+    width: 250px;
+    height: 30px;
+    position: relative;
+    float: right;
+    margin-right: 5px;
+    color: gray;
+    margin-top: 20px;
+}
+#lupa{
+    position: relative;
+    width:15px;
+    height: 15px;
+    float: right;
+    color: lightgrey;
+    margin-top: 28px;
+    margin-right: -245px;
+}
