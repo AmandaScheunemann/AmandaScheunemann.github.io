@@ -3,75 +3,63 @@
     background-image: url("Imagens/madeira.jpg");
     background-size: 100% 100%;
     background-repeat: repeat-x;
-    height: 100px;
-    min-width: 950px;
+    height: 65px;
+    min-width: 1180px;
     border-style: solid;
-    border-width: 3px;
-    border-color:  #dcbd96;
-    padding: 10px;
+    border-width: 2px;
+    border-color:#381B07;
+    padding: 5px;
 }
 .ulMenu{
-    border-width:0px;
-}
-.nav > .liMenu{
-    border-width:0px;
-    width: 350px;
-}
-.imgMenu{
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}.ulLogo{
-    list-style-type: none;
-    position: absolute;
-    width: 300px;
-    margin-top: 35px;
-    margin-left: 85px;
-    color: #dcbd96
-}
-.liLogo{
-    width: 350px;
-    float: left;
-    font-family: Sweet;
-    font-size: 40px;
-}
-.liMenuWpp{
-    position: absolute;
-}
-.liMenuGmail{
-    margin-top: 32px;
-}
-.pMenu{
+    border-width: 0px;
+    margin-top: -54px;
     float: right;
 }
-.pMenuWpp{
-    margin-right: 10px;
+.nav > .liMenu{
+    border-width: 0px;
+    width: 245px;
+    font-size: 15px;
+}
+.imgWpp:hover{
+background-image: url("Imagens/wpp.png");
+}
+.ulLogo{
+    list-style-type: none;
+    position: absolute;
+    width: 225px;
+    margin-top: -44px;
+    margin-left: 43px;
+    color: #381B071;
+}
+.liLogo{
+    width: 200px;
+    float: left;
+    font-family: Sweet;
+    font-size: 29px;
 }
 @font-face{
     font-family: Sweet;
     src: url("Sweet.ttf");
 }
 #logo{
-    width: 152px;
-    height: 108px;
+    width: 85px;
+    height: 70px;
     float: left;
-    margin-left: -18px;
-    margin-top: -21px;
+    margin-left: -7px;
+    margin-top: -74px
 }
-
 
 .divTopico{
-    min-width: 950px;
+    min-width: 1220px;
 }
 .topicos{
-    min-width: 670px;
     border: 0px;
+    margin-top: 2px;
 }
 .pTopico{
-    margin-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 15px;
+    font-family: cursive;
     font-size: 20px;
+    padding: 10px;
 }
 .liTopico{
     border: 0px;
@@ -87,7 +75,7 @@ display: list-item;
 .servicos{
     border-right: 1px;
     border-right-style: solid;
-    border-color: lightgrey;
+    border-color: black;
 }
 .servicos:hover{
     border-right: 4px;
@@ -99,12 +87,10 @@ display: list-item;
 .servicos:hover + #ulServicos{
     display: list-item;
 }
-
-
 .produtos{
     border-right: 1px;
     border-right-style: solid;
-    border-color: lightgrey;
+    border-color: black;
 }
 .produtos:hover{
     border-right: 4px;
@@ -123,19 +109,91 @@ display: list-item;
 
 #inBuscar{
     width: 250px;
-    height: 30px;
+    height: 36px;
     position: relative;
     float: right;
-    margin-right: 5px;
     color: gray;
-    margin-top: 20px;
+    margin-top: -59px;
+    margin-right: 100px;
+    font-size: 17px;
 }
 #lupa{
     position: relative;
-    width:15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     float: right;
     color: lightgrey;
-    margin-top: 28px;
-    margin-right: -245px;
+    margin-top: -50px;
+    margin-right: 105px;
+}
+
+
+
+
+
+.imgPrincipal{
+    height: 400px;
+    width: 500px;
+    margin: auto;
+}
+.divPrincipal{
+    text-align: center;
+}
+.carousel{
+    background-color: #381B07;
+}
+ul{
+    list-style-type: none;
+}
+.liPrincipal{
+    float: left;
+    margin-top: 20px;
+}
+
+
+
+
+
+.contatowpp{
+    width: 200px;
+    margin-right: 0px;
+    border: 0px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 20px;
+    padding: 5px;
+    display: none;
+}
+
+.imgLink{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    background-size: 100% 100%;
+}
+.imgLink{
+    background-image: url("Imagens/wpp.png");
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+}
+.imgLink:hover{
+    background-image: url("Imagens/picfoto.png");
+}
+.imgLink:hover + .contatowpp{
+    display: block;
+    margin-right: 40px;
+}
+.divContato{
+    width: 300px;;
+    margin-top: -55px;
+    height: 32px;
+    float: right;
+    border: 0px
+}
+h1{
+    font-family: cursive;
+    color: white;
 }
