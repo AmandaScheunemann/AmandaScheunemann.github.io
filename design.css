@@ -65,13 +65,6 @@ background-image: url("Imagens/wpp.png");
     border: 0px;
     cursor: pointer;
 }
-#ulServicos{
-    list-style-type: none;
-    display: none;
-}
-#ulServiços:hover{
-display: list-item;
-}
 .servicos{
     border-right: 1px;
     border-right-style: solid;
@@ -83,9 +76,6 @@ display: list-item;
     border-color: black;;
     border-left: 4px;
     border-left-style: solid;
-}
-.servicos:hover + #ulServicos{
-    display: list-item;
 }
 .produtos{
     border-right: 1px;
@@ -99,7 +89,7 @@ display: list-item;
     border-left: 4px;
     border-left-style: solid;
 }
-.projetos:hover{
+.ambientes:hover{
     border-right: 4px;
     border-right-style: solid;
     border-color: black;;
@@ -196,4 +186,42 @@ ul{
 h1{
     font-family: cursive;
     color: white;
+}
+
+
+
+
+.marcenaria{
+    width: 300px;
+    height: 200px;
+    background-size: 100% 100%;
+    margin: 10px 25px 30px 28px;
+    float: left;
+    border: 5px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 2px hsl(51, 100%, 95%);
+    -moz-box-shadow: 1px 1px 2px #e6e6e6;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    display: block;
+}
+.marcenaria2{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 10px;
+    left: 0;
+    background-size: 100% 100%;
+}
+.divServicos{
+    display: none;
+}
+.divProdutos{
+    display: none;
+}
+.divAmbientes{
+    display: none;
 }
