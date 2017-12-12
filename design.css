@@ -4,10 +4,10 @@
     background-size: 100% 100%;
     background-repeat: repeat-x;
     height: 65px;
-    min-width: 1180px;
+    min-width: 1201px;
     border-style: solid;
     border-width: 2px;
-    border-color:#381B07;
+    border-color:rgb(116, 53, 11);
     padding: 5px;
 }
 .ulMenu{
@@ -20,41 +20,47 @@
     width: 245px;
     font-size: 15px;
 }
-.imgWpp:hover{
-background-image: url("Imagens/wpp.png");
-}
 .ulLogo{
     list-style-type: none;
     position: absolute;
     width: 225px;
-    margin-top: -44px;
+    margin-top: -47px;
     margin-left: 43px;
-    color: #381B071;
+    color: rgb(49, 22, 2);
 }
 .liLogo{
     width: 200px;
     float: left;
     font-family: Sweet;
     font-size: 29px;
+    color: rgb(116, 53, 11);
 }
 @font-face{
     font-family: Sweet;
     src: url("Sweet.ttf");
 }
 #logo{
+    cursor: pointer;
     width: 85px;
     height: 70px;
     float: left;
     margin-left: -7px;
     margin-top: -74px
 }
-
+#logo:hover{
+    cursor: pointer;
+    width: 90px;
+    height: 78px;
+    margin-left: -10px;
+    margin-top: -80px
+}
 .divTopico{
     min-width: 1220px;
 }
 .topicos{
     border: 0px;
     margin-top: 2px;
+    margin-right: 150px;
 }
 .pTopico{
     font-family: cursive;
@@ -115,6 +121,7 @@ background-image: url("Imagens/wpp.png");
     color: lightgrey;
     margin-top: -50px;
     margin-right: 105px;
+    cursor: pointer;
 }
 
 
@@ -122,22 +129,26 @@ background-image: url("Imagens/wpp.png");
 
 
 .imgPrincipal{
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
     margin: auto;
+    border-radius: 350px;
 }
 .divPrincipal{
     text-align: center;
 }
 .carousel{
-    background-color: #381B07;
+    z-index: 1;
+
 }
 ul{
     list-style-type: none;
 }
 .liPrincipal{
+    margin: auto;
     float: left;
-    margin-top: 20px;
+    opacity: 0;
+    margin-top: 5px;
 }
 
 
@@ -151,7 +162,19 @@ ul{
     border-style: solid;
     border-width: 2px;
     font-size: 20px;
-    padding: 5px;
+    padding: 3px;
+    z-index: 4;
+    display: none;
+}
+.contatogmail{
+    width: 200px;
+    margin-right: 0px;
+    border: 0px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 20px;
+    padding: 3px;
+    z-index: 4;
     display: none;
 }
 
@@ -161,20 +184,38 @@ ul{
     float: right;
     margin-right: 10px;
     background-size: 100% 100%;
+    cursor: pointer;
 }
-.imgLink{
+#wpp{
     background-image: url("Imagens/wpp.png");
     width: 30px;
     height: 30px;
     float: right;
     margin-right: 10px;
 }
-.imgLink:hover{
-    background-image: url("Imagens/picfoto.png");
+#gmail{
+    background-image: url("Imagens/gmail.png");
+    width: 30px;
+    height: 25px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+    border-radius: 5px;
 }
-.imgLink:hover + .contatowpp{
-    display: block;
-    margin-right: 40px;
+#gmail:hover{
+    background-image: url("Imagens/gmailPB.png");
+    width: 33px;
+    height: 33px;
+    margin-top: 0;
+}
+#wpp:hover{
+    background-image: url("Imagens/wppPB.png");
+    width: 43px;
+    height: 43px;
+    margin-top: -6px;
+}
+#wpp:hover  .contatowpp{
+    margin-top: 5px;
 }
 .divContato{
     width: 300px;;
@@ -192,6 +233,8 @@ h1{
 
 
 .marcenaria{
+    min-width: 200px;
+    max-width: 300px;
     width: 300px;
     height: 200px;
     background-size: 100% 100%;
@@ -224,4 +267,184 @@ h1{
 }
 .divAmbientes{
     display: none;
+}
+
+
+
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translate(460px, -100px) rotate(180deg);
+    -ms-transform: translate(460px, -100px) rotate(180deg);
+    transform: translate(460px, -100px) rotate(180deg);
+    -webkit-transition: all 0.2s 0.4s ease-in-out;
+    transition: all 0.2s 0.4s ease-in-out;
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    height: 200px;
+    width: 350px;
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+ 
+  }
+  
+  .hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+    -webkit-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    transform: translateY(-200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  
+  .hovereffect:hover h2 {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  
+  .hovereffect:hover a.info {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  .img-responsive{
+      background-size: 100% 100%;
+  }
+
+
+
+  .topicoCozinha{
+      display: none;
+      margin-top: 10px;
+  }
+  .topicoQuarto{
+    display: none;
+    margin-top: 10px;
+  }
+  .topicoBanheiro{
+    display: none;
+    margin-top: 10px;
+  }
+  .topicoSala{
+    display: none;
+    margin-top: 10px;
+  }
+  .card-img-top{
+      background-size: 100% 100%;
+      height: 300px;
+      max-width: 400px;
+      min-width: 200px;
+  }
+  .cardTopicos{
+    width: 1320px;
+    margin-left: -400px;
+  }
+
+
+
+  .palavras{
+      color: black;
+      display: block;
+      font-family: cursive;
+      font-size: 25px;
+      text-align: center;
+      opacity: 0;
+      font-family: Javacom
+  }
+  @font-face {
+      font-family: Javacom;
+      src: url("Javacom.otf");
+  }
+  #principal{
+    max-width: 895px;
+    margin-top: 15px;
+  }
+
+  .crie{
+    width: 300px;
+    margin: auto;
+    font-size: 30px;
+    margin-top: -10px;
+    font-family: crie;
+  }
+  .imagine{
+      text-align: center;
+      z-index: 2;
+      position: unset;
+      height: 0px;
+  }
+  .cima{
+    display: block;
+    z-index: 3;
+    margin-top: -11px;
+  }
+  body{
+      background-image: url("Imagens/pf2.jpg");
+  }
+  .card-body{
+    background-image: url("Imagens/pf2.jpg");
+  }
+@font-face{
+    font-family: crie;
+    src: url("Fontanero.ttf")
+}
+.crie>div>p{
+    margin-top: -10px;
 }
