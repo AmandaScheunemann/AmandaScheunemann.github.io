@@ -10,6 +10,7 @@ $(document).ready(function () {
         $(".topicoSala").hide();
         $(".contatowpp").hide();
         $(".contatogmail").hide();
+        $(".topicoLuminaria").hide();
     });
     $("#principal").click(function () {
         $("#principal").show();
@@ -21,6 +22,7 @@ $(document).ready(function () {
         $(".topicoSala").hide();
         $(".contatowpp").hide();
         $(".contatogmail").hide();
+        $(".topicoLuminaria").hide();
     });
     $(".produtos").click(function () {
         $("#principal").hide();
@@ -33,6 +35,7 @@ $(document).ready(function () {
         $(".topicoSala").hide();
         $(".contatowpp").hide();
         $(".contatogmail").hide();
+        $(".topicoLuminaria").hide();
     });
     $(".ambientes").click(function () {
         $("#principal").hide();
@@ -45,6 +48,7 @@ $(document).ready(function () {
         $(".topicoSala").hide();
         $(".contatowpp").hide();
         $(".contatogmail").hide();
+        $(".topicoLuminaria").hide();
     });
     $("#logo").click(function () {
         $("#principal").show();
@@ -55,6 +59,7 @@ $(document).ready(function () {
         $(".topicoQuarto").hide();
         $(".topicoBanheiro").hide();
         $(".topicoSala").hide();
+        $(".topicoLuminaria").hide();
     });
 
 
@@ -69,6 +74,7 @@ $(document).ready(function () {
         $(".topicoSala").hide();
         $(".contatowpp").hide();
         $(".contatogmail").hide();
+        $(".topicoLuminaria").hide();
     });
 
     $(".quarto").click(function () {
@@ -82,6 +88,7 @@ $(document).ready(function () {
         $(".topicoSala").hide();
         $(".contatowpp").hide();
         $(".contatogmail").hide();
+        $(".topicoLuminaria").hide();
     });
     $(".banheiro").click(function () {
         $("#principal").hide();
@@ -94,6 +101,7 @@ $(document).ready(function () {
         $(".topicoSala").hide();
         $(".contatowpp").hide();
         $(".contatogmail").hide();
+        $(".topicoLuminaria").hide();
     });
     $(".sala").click(function () {
         $("#principal").hide();
@@ -106,6 +114,20 @@ $(document).ready(function () {
         $(".topicoSala").show();
         $(".contatowpp").hide();
         $(".contatogmail").hide();
+        $(".topicoLuminaria").hide();
+    });
+    $(".luminarias").click(function () {
+        $("#principal").hide();
+        $(".divServicos").hide();
+        $(".divProdutos").hide();
+        $(".divAmbientes").hide();
+        $(".topicoCozinha").hide();
+        $(".topicoQuarto").hide();
+        $(".topicoBanheiro").hide();
+        $(".topicoSala").hide();
+        $(".contatowpp").hide();
+        $(".contatogmail").hide();
+        $(".topicoLuminaria").show();
     });
 
 
@@ -114,7 +136,10 @@ $(document).ready(function () {
     }, 2000);
     $(".liPrincipal").animate({
         opacity: 1
-    }, 2000);
+    }, 3000);
+    $(".crie").animate({
+        opacity: 1
+    }, 7000);
 
     $("#wpp").hover(function () {
         $(".contatowpp").show();
@@ -141,6 +166,7 @@ $(document).ready(function () {
             $(".topicoSala").hide();
             $(".contatowpp").hide();
             $(".contatogmail").hide();
+            $(".topicoLuminaria").hide();
         }
 
         if (busca == "quarto" || busca == "quartos") {
@@ -155,6 +181,7 @@ $(document).ready(function () {
             $(".topicoSala").hide();
             $(".contatowpp").hide();
             $(".contatogmail").hide();
+            $(".topicoLuminaria").hide();
         }
 
         if (busca == "banheiro" || busca == "banheiros") {
@@ -168,6 +195,7 @@ $(document).ready(function () {
             $(".topicoSala").hide();
             $(".contatowpp").hide();
             $(".contatogmail").hide();
+            $(".topicoLuminaria").hide();
         }
 
         if (busca == "area de estar" || busca == "área de estar" || busca == "areas de estar" || busca == "áreas de estar" || busca == "sala" || busca == "salas") {
@@ -181,14 +209,28 @@ $(document).ready(function () {
             $(".topicoSala").show();
             $(".contatowpp").hide();
             $(".contatogmail").hide();
+            $(".topicoLuminaria").hide();
         }
+
+        if (busca == "luminaria" || busca == "luminarias" || busca == "luminaria exclusiva" || busca == "luminarias exclusivas");
+             $("#principal").hide();
+            $(".divServicos").hide();
+            $(".divProdutos").hide();
+            $(".divAmbientes").hide();
+            $(".topicoCozinha").hide();
+            $(".topicoQuarto").hide();
+            $(".topicoBanheiro").hide();
+            $(".topicoSala").hide();
+            $(".contatowpp").hide();
+            $(".contatogmail").hide();
+            $(".topicoLuminaria").show();
     };
 
 
     $("#lupa").click(buscaFunction);
     $(document).keypress(function (e) {
-        if(e.which == 13) {
+        if (e.which == 13) {
             buscaFunction();
         }
-    })
+    });
 });
