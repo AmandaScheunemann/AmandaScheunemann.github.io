@@ -233,16 +233,11 @@ h1{
 
 
 .marcenaria{
-<<<<<<< HEAD
     min-width: 200px;
     max-width: 300px;
     width: 300px;
     height: 200px;
     background-size: 100% 100%;
-=======
-    width: 300px;
-    height: 200px;
->>>>>>> 7512b4d013ad40a914bded2b37035e689de0bb70
     margin: 10px 25px 30px 28px;
     float: left;
     border: 5px solid #fff;
@@ -253,10 +248,6 @@ h1{
     -moz-box-shadow: 1px 1px 2px #e6e6e6;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: default;
-<<<<<<< HEAD
-=======
-    background-size: 100% 100%;
->>>>>>> 7512b4d013ad40a914bded2b37035e689de0bb70
     display: block;
 }
 .marcenaria2{
@@ -268,7 +259,6 @@ h1{
     left: 0;
     background-size: 100% 100%;
 }
-<<<<<<< HEAD
 .divServicos{
     display: none;
 }
@@ -466,5 +456,3 @@ h1{
 .crie>div>p{
     margin-top: -10px;
 }
-=======
->>>>>>> 7512b4d013ad40a914bded2b37035e689de0bb70
